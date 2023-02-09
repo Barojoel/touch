@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+//The user table
+model User {
+  id           String   @id @default(cuid())
+  profile      Profile?
+  email        String   @unique
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  wallet       Wallet[]
+}
+
+//The user profile table
+model Profile {
+  id          String   @id @default(cuid())
+  name        String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId      String   @unique
+  password    String
+  mobile      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+//Overal Wallet table
+model Wallet {
+  id            String   @id @default(cuid())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId        String
+  balance       Int
+  ledgers       Ledger[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+//Ledger table
+model Ledger {
+  id            String        @id @default(cuid())
+  name          String
+  balance       Int
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  transaction   Transaction[] 
+  Wallet        Wallet?       @relation(fields: [walletId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  walletId      String?
+}
+
+//Transaction table (Income/Expenses)
+model Transaction {
+  id          String   @id @default(cuid())
+  name        String
+  trnxType    String
+  balance     Int
+  ledgers     Ledger?   @relation(fields: [ledgerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  ledgerId    String 
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+    
+}
+
+

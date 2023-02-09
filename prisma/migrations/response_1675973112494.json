@@ -1,0 +1,125 @@
+[
+  {
+    "id": "cldxavba20002wc486gmesa1b",
+    "name": "KCB",
+    "balance": 500,
+    "createdAt": "2023-02-09T16:12:57.394Z",
+    "updatedAt": "2023-02-09T16:12:57.394Z",
+    "walletId": "cldxarzsz0000wc48q2i99gym",
+    "Wallet": {
+      "id": "cldxarzsz0000wc48q2i99gym",
+      "userId": "cldxa6mij0000wc8k95s91oy5",
+      "balance": 2000,
+      "createdAt": "2023-02-09T16:10:13.547Z",
+      "updatedAt": "2023-02-09T16:10:13.547Z"
+    },
+    "transaction": [
+      {
+        "id": "cldxbhd16000mwc48bgd5hmer",
+        "name": "KCB loan on Fees",
+        "trnxType": "Income",
+        "balance": 300,
+        "ledgerId": "cldxavba20002wc486gmesa1b",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      },
+      {
+        "id": "cldxbi09l000owc481lkffrej",
+        "name": "KCB loan on lunch payment",
+        "trnxType": "Expenses",
+        "balance": 200,
+        "ledgerId": "cldxavba20002wc486gmesa1b",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      }
+    ]
+  },
+  {
+    "id": "cldxawfyf0004wc48el5nfvg4",
+    "name": "MSHWARI",
+    "balance": 500,
+    "createdAt": "2023-02-09T16:12:57.394Z",
+    "updatedAt": "2023-02-09T16:12:57.394Z",
+    "walletId": "cldxarzsz0000wc48q2i99gym",
+    "Wallet": {
+      "id": "cldxarzsz0000wc48q2i99gym",
+      "userId": "cldxa6mij0000wc8k95s91oy5",
+      "balance": 2000,
+      "createdAt": "2023-02-09T16:10:13.547Z",
+      "updatedAt": "2023-02-09T16:10:13.547Z"
+    },
+    "transaction": [
+      {
+        "id": "cldxb23iy0008wc48ocisbhhz",
+        "name": "Deposits",
+        "trnxType": "Income",
+        "balance": 200,
+        "ledgerId": "cldxawfyf0004wc48el5nfvg4",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      },
+      {
+        "id": "cldxb3mv5000cwc48qkfngmmi",
+        "name": "Salary Received",
+        "trnxType": "Income",
+        "balance": 200,
+        "ledgerId": "cldxawfyf0004wc48el5nfvg4",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      },
+      {
+        "id": "cldxb53jq000ewc48p91h69ot",
+        "name": "Commissions Received",
+        "trnxType": "Income",
+        "balance": 100,
+        "ledgerId": "cldxawfyf0004wc48el5nfvg4",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      }
+    ]
+  },
+  {
+    "id": "cldxax6lp0006wc48vdhn1407",
+    "name": "POCHI LA BIASHARA",
+    "balance": 1000,
+    "createdAt": "2023-02-09T16:12:57.394Z",
+    "updatedAt": "2023-02-09T16:12:57.394Z",
+    "walletId": "cldxarzsz0000wc48q2i99gym",
+    "Wallet": {
+      "id": "cldxarzsz0000wc48q2i99gym",
+      "userId": "cldxa6mij0000wc8k95s91oy5",
+      "balance": 2000,
+      "createdAt": "2023-02-09T16:10:13.547Z",
+      "updatedAt": "2023-02-09T16:10:13.547Z"
+    },
+    "transaction": [
+      {
+        "id": "cldxbcc7n000gwc48wjq4crib",
+        "name": "Goods Sold on Cash",
+        "trnxType": "Income",
+        "balance": 300,
+        "ledgerId": "cldxax6lp0006wc48vdhn1407",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      },
+      {
+        "id": "cldxbdkav000iwc48tum79lu2",
+        "name": "Goods purchased",
+        "trnxType": "Expenses",
+        "balance": 100,
+        "ledgerId": "cldxax6lp0006wc48vdhn1407",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      },
+      {
+        "id": "cldxbeyuj000kwc48q8jlz2gk",
+        "name": "Money Received from Tenders",
+        "trnxType": "Income",
+        "balance": 700,
+        "ledgerId": "cldxax6lp0006wc48vdhn1407",
+        "createdAt": "2023-02-09T16:18:50.374Z",
+        "updatedAt": "2023-02-09T16:18:50.374Z"
+      }
+    ]
+  }
+]
